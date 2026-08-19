@@ -13,17 +13,48 @@ class BasketCounterBody extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Row(
-              children: [
-                Column(
-                  children: [
-                    
+            Text('Team A',style: TextStyle(
+              fontSize: 33,
+            ),),
+            Text('0',style: TextStyle(
+              fontSize: 150,
 
-                  ],
-                ),
+            ),),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.orange,
+                minimumSize: Size(150,44),
+              ),
+              onPressed: (){}, child:Text('add 1 Point',style: TextStyle(
+                fontSize: 17,
+                color: Colors.black,
+              ),),),
 
-              ],
-            ),
+              SizedBox(
+                height:20 ,
+               ),
+
+              ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.orange,
+                minimumSize: Size(150,44),
+              ),
+              onPressed: (){}, child:Text('add 2 Point',style: TextStyle(
+                fontSize: 17,
+                color: Colors.black,
+              ),),),
+               SizedBox(
+                height:20 ,
+               ),
+              ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.orange,
+                minimumSize: Size(150,44),
+              ),
+              onPressed: (){}, child:Text('add 3 Point',style: TextStyle(
+                fontSize: 17,
+                color: Colors.black,
+              ),),),
 
           ],
         ),
